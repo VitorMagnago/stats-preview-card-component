@@ -1,80 +1,86 @@
-:root{
-    --bg-color: #0A0C1C;
-    --card-bg-color: #1B1937;
-    --purple: #AB5CDB;
-    --font-color: #FFFFFF;
-    --font-inter: 'Inter', sans-serif;
-    --font-lexend-deca:'Lexend Deca', sans-serif;
+:root {
+	--bg-color: #0a0c1c;
+	--card-bg-color: #1b1937;
+	--purple: #ab5cdb;
+	--font-color: #ffffff;
+	--font-inter: "Inter", sans-serif;
+	--font-lexend-deca: "Lexend Deca", sans-serif;
 }
 
-body{
-    min-height: 100vh;
-    background-color: var(--bg-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+	min-height: 100vh;
+	background-color: var(--bg-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.card{
-    display: grid;
-    background-color: var(--card-bg-color);
-    max-width: 327px;
-    box-shadow: 0rem 1.25rem 1.25rem -0.625rem rgba(23, 25, 41, 0.203087);
-    border-radius: .5rem;
-    text-align: center;
+.card {
+	display: grid;
+	background-color: var(--card-bg-color);
+	max-width: 327px;
+	box-shadow: 0rem 1.25rem 1.25rem -0.625rem rgba(23, 25, 41, 0.203087);
+	border-radius: 0.5rem;
+	text-align: center;
 }
 
-.overlay{
-    background-color: var(--purple);
-    border-radius: .5rem .5rem 0 0 ;
+.overlay {
+	background-color: var(--purple);
+	border-radius: 0.5rem 0.5rem 0 0;
 }
 
-.card__image{
-    mix-blend-mode: multiply ;
-    opacity: 75.11%;
+.card__image {
+	mix-blend-mode: multiply;
+	opacity: 75.11%;
 }
 
-.card__info{
-    margin: 2.5rem 2rem 2rem 2rem;
-   
+.card__info {
+	margin: 2.5rem 2rem 2rem 2rem;
 }
 
-.card-info__title{
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: var(--font-color);
-    font-family: var(--font-inter);
+.card-info__title {
+	font-size: 1.75rem;
+	font-weight: 700;
+	color: var(--font-color);
+	font-family: var(--font-inter);
+	line-height: 2rem;
 }
 
-em{
-    color: var(--purple);
-    font-style: normal;
+em {
+	color: var(--purple);
+	font-style: normal;
 }
 
-.card-info__text{
-    font-size: 15px;
-    font-family: var(--font-inter);
-    color: var(--font-color);
-    line-height: 25px;
-    mix-blend-mode: normal;
-    opacity: .75;
+.card-info__text {
+	font-size: 15px;
+	font-family: var(--font-inter);
+	color: var(--font-color);
+	line-height: 25px;
+	mix-blend-mode: normal;
+	opacity: 0.75;
+	margin-top: 1rem;
+	margin-bottom: 2.5rem;
 }
 
-.metric__number{
-    font-family: var(--font-inter);
-    color: var(--font-color);
-    font-size: 24px;
-    font-weight: 700;
+.metric__container {
+	margin-top: 1.5rem;
 }
 
-.metric__name{
-    margin-top: 2px;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-family: var(--font-lexend-deca);
-    color: var(--font-color);
-    line-height: 25px;
-    mix-blend-mode: normal;
-    opacity: .6;
-    letter-spacing: 1px
+.metric__number {
+	font-family: var(--font-inter);
+	color: var(--font-color);
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.metric__name {
+	margin-top: 2px;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-family: var(--font-lexend-deca);
+	color: var(--font-color);
+	line-height: 25px;
+	mix-blend-mode: normal;
+	opacity: 0.6;
+	letter-spacing: 1px;
 }
