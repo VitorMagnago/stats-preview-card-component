@@ -18,11 +18,17 @@
 		<main class="card">
 			<div class="image-container">
 				<div class="overlay">
-					<img
-						src="images/image-header-mobile.jpg"
-						alt=""
-						class="card__image"
-					/>
+					<picture>
+						<source
+							media="(min-width: 375px )"
+							srcset="images/image-header-desktop.jpg"
+						/>
+						<img
+							src="images/image-header-mobile.jpg"
+							alt=""
+							class="card__image"
+						/>
+					</picture>
 				</div>
 			</div>
 			<div class="card__info">

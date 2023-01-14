@@ -16,7 +16,8 @@ body {
 }
 
 .card {
-	display: grid;
+	display: flex;
+	flex-direction: column;
 	background-color: var(--card-bg-color);
 	max-width: 327px;
 	box-shadow: 0rem 1.25rem 1.25rem -0.625rem rgba(23, 25, 41, 0.203087);
@@ -63,7 +64,7 @@ em {
 }
 
 .metric__container {
-	margin-top: 1.5rem;
+	/* margin-top: 1.5rem; */
 }
 
 .metric__number {
@@ -83,4 +84,49 @@ em {
 	mix-blend-mode: normal;
 	opacity: 0.6;
 	letter-spacing: 1px;
+}
+
+/* Desktop version */
+@media (min-width: 375px) {
+	.card {
+		flex-direction: row-reverse;
+		max-width: 1110px;
+	}
+
+	.card-info__metric {
+		display: flex;
+		justify-content: center;
+	}
+
+	.card__info {
+		margin: 72px 96px 60px 72px;
+	}
+
+	.card__image {
+		max-width: 540px;
+	}
+
+	.overlay {
+		background-color: var(--purple);
+		border-radius: 0 0.5rem 0.5rem 0;
+	}
+
+	.card-info__title {
+		font-size: 2.25rem;
+		line-height: 2.75rem;
+		text-align: left;
+	}
+
+	.card-info__text {
+		text-align: left;
+		margin-top: 1.5rem;
+		margin-bottom: 4.5rem;
+		margin-right: 28px;
+	}
+
+	.card-info__metric {
+		justify-content: space-between;
+		margin-right: 52px;
+		text-align: left;
+	}
 }
