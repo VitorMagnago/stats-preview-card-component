@@ -22,7 +22,7 @@ This is a solution to the [Stats Preview Card Component](https://www.frontendmen
 
 ### Links
 
-- [Solution in Front End Mentor Site:](https://www.frontendmentor.io/solutions/nft-preview-card-component-7-GfK5bKTr)
+- [Solution in Front End Mentor Site:](https://www.frontendmentor.io/solutions/stats-preview-card-component-z6ZgayAGRd)
 - [Live Site](https://stats-preview-zeta.vercel.app/)
 
 <br>
