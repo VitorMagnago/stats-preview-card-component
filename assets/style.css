@@ -85,7 +85,7 @@ em {
 }
 
 /* Desktop version */
-@media (min-width: 920px) {
+@media (min-width: 1086px) {
 	.card {
 		flex-direction: row-reverse;
 		max-width: 1110px;
